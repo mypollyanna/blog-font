@@ -40,7 +40,7 @@
         const _this = this
         axios.put('http://localhost:8181/api/user/delete/'+row.id).then(function (resp) {
           if(resp.status === 200) {
-            _this.$alert('<' + row.username + '> 删除成功', '消息', {
+            _this.$alert('《' + row.username + '》 删除成功', '消息', {
               confirmButtonText: '确定',
               callback: action => {
                 window.location.reload()
